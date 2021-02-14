@@ -1,0 +1,23 @@
+# Call as cmake -G 'Unix Makefiles' -B "${build directory}" -H"${source directory}"
+
+project(Example)
+
+cmake_minimum_required(version 3.0)
+
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")  
+#when there are already flags defined they will be included
+
+
+
+#Cause a Makefile to be written creating the executable.
+add_executable(
+ 
+ #first entry is the name of the executable we would like to create, 
+ #followed by the list of all sources on which it depends 
+ mainer			
+ source1.cpp
+ source2.cpp
+ ...
+ sourceN
+)

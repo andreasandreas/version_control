@@ -1,0 +1,4 @@
+$ git checkout <commit-hash>   # commit-hash e.g from git log
+$ cd local_directory       # git entry-point of the repository
+$ git fetch                # optional shows how has done what
+$ git pull origin master   # updates the local repos to the online repos

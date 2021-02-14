@@ -1,0 +1,1 @@
+$ git help branch            #git manual with entry about branching

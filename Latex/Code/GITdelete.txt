@@ -1,0 +1,2 @@
+$ git branch-d             <branchName>    #deletes locally branchName
+$ git push origin --delete <branchName>    #deletes branchName on remote repo

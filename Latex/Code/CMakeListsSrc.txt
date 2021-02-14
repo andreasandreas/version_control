@@ -1,0 +1,14 @@
+#******************************  Src-CMakeLists.txt ****************************** 
+
+include_directories("${CMAKE_SOURCE_DIR}" ../Header)
+
+#create a dynamic library
+add_library(myPennaLib SHARED Animal.cpp Genome.cpp)
+
+#create the exectuable
+add_executable(PennaModel Mainer.cpp)
+
+#linklibraries to executable
+target_link_libraries(PennaModel myPennaLib)
+
+

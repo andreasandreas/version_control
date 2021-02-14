@@ -1,0 +1,6 @@
+if(UNIX)
+ message ("Setting GCC flags")
+ ...
+else()
+ message ("Setting MSVC flags")
+endif()

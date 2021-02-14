@@ -1,0 +1,14 @@
+if(UNIX)
+ message ("Setting GCC flags")
+ ...
+else()
+ message ("Setting MSVC flags")
+endif()
+
+
+# setting compiler flags depending on the compiler being used
+if(CMAKE_CXX_COMPILER_ID MATCHES "(C|c?)lang")
+    set(CMAKE_CXX_FLAGS "-std=c++11 -Weverything")
+else()
+    set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra -Wpedantic")
+endif()

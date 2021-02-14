@@ -1,0 +1,5 @@
+#Set the Compiler to be used
+SET(CMAKE_CXX_COMPILER /path/to/cpp/compiler)
+
+#Provide a hard coded path
+include_directories("/opt/local/include" /usr/local/include)

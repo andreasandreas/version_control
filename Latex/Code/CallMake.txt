@@ -1,0 +1,7 @@
+$ make
+gcc -c -o Fu1.o Fu1.c
+gcc -c -o Adder.o Adder.c
+gcc -o Funct Fu1.o Adder.o
+
+$ make clean
+rm -rf *.o

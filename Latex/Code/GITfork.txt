@@ -1,0 +1,1 @@
+$ git clone path-given-from-online-repo     #the path is usally given via fork-button

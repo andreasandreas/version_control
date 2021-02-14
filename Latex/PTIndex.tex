@@ -1,0 +1,120 @@
+\input{./Parameter/Parameter.tex}
+\input{./Parameter/Makros.tex}
+\usepackage{gnuplot-lua-tikz}
+
+%-----------------------------------------------opening-----------------------------------------------
+\usepackage{enumitem}
+
+%\subject{Notes}
+\title{Programming Techniques
+\ \\
+%\vspace*{2 cm}\includegraphics[scale=0.3]{./Bilder/Titel3.jpg}\vfill
+ }
+\date{}
+\publishers{Andreas Urech\\D-ITET\\ETH
+}
+%\publishers{Andreas Urech \\
+%\ \\
+%Copy for Markus Urech }
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+%\pagenumbering{roman}
+\tableofcontents
+\newpage
+%\pagenumbering{arabic}
+%\setcounter{page}{1}
+%\setcounter{chapter}{-1}	% Macht erstes Kapitel zu Kapitel 0
+%\chapter{Programming Project}
+%\begin{center}
+%\includegraphics[scale=1]{./Bilder/Tree1.png}
+%\captionof{figure}[a]{Project Structure}
+%\end{center}
+%$\mathbb{\dagger}$  
+%Executable main gets saved here. \\
+%\ \\
+%$\mathbb{\ddag}$
+%Source code of the the header files (forward declared classes) and the class implementations get saved here.\\
+%$\mathbb{*}$\\
+%Executable main and the compiled classes.\\
+%$\mathbb{**}$\\
+%The header files out of $/$usr$/$include and the libraries out of $/$usr$/$lib get saved here.\\
+%\\
+%\BF{Library:}\\
+%Collection of functions/objects for a specific programm. It helps to build an application.\\
+%\ \\
+%\BF{API:}\\
+%Interface to other programs or even the OS.
+%\\
+%In embedded systems, when using a simple micro controller there is often times not even an OS. The libraries resp. the API make up 'the OS'.\\
+%\ \\
+%\BF{Compiler:}\\
+%The gnu gcc-compiler compiles c programs and links the c-libraries. The GNU g++ compiler compiles c++ programs and links the c++libraries. However the gcc compiler can be 'morphed' in the c++ compiler. 
+%\TLi{ }{./Code/compiler}
+%Both lines are equivalent. Considering the second line - The first element is a compiler option, the second two are linker options.\\ 
+%\begin{center}
+%\includegraphics[scale=0.9]{./Bilder/EclipseAb.png}
+%\captionof{figure}[a]{Eclipse}
+%\end{center}
+%\newpage
+%\begin{center}
+%\includegraphics[scale=0.44]{./Bilder/EclipseC.png}
+%\end{center}
+%\TLi{ }{./Code/ios}
+\input{./Chapters/MakeObjects.tex}
+\input{./Chapters/IDE.tex}
+%\input{./Chapters/GIT.tex}
+\input{./Chapters/GNUPlots.tex}
+
+
+
+
+
+\appendix
+\chapter{Appendix}
+
+
+%\chapter{Miscellaneous}
+%\section{Namespace}
+%Name spaces allow to divide to code into different scopes. Name spaces can be opened at arbitrary places.
+
+%\TwinLs
+%{\CppLi{Definition of a name space}{./Code/NameSpace1.cpp}}
+%{\CppLi{Access to name space}{./Code/NameSpace2.cpp}}
+%An alternative to the scope operator would be the keyword \textit{using} (but it is generally seen as a bad habit).  
+%\ \\
+%\ \\
+%Example:
+%\CLi{istream}{./Code/istream}
+
+
+%\chapter{Open MP Library}
+%The open-MP library is a standard library that is included in the basic version of the gcc - compiler. It supports parallel computing in C and Cpp.
+%\CLi{OpenMP Example}{./Code/openMP1.c}
+%\TLi{Output openMP}{./Code/outputOpenMP1.txt}
+%\BF{Header file $omp.h$}
+%\TLi{open-MP Header}{./Code/ompPath.txt}
+%\TLi{Header File omp.h}{./Code/omp.h}
+\section{Cheat-sheet Open MP}
+
+\includegraphics[scale=0.78]{./Bilder/OpenMP1.pdf}
+%\captionof{figure}[open MP cheat]{open MP cheat}
+
+\includegraphics[scale=0.78]{./Bilder/OpenMP2.pdf}
+%\captionof{figure}[open MP cheat]{open MP cheat}
+
+\includegraphics[scale=0.78]{./Bilder/OpenMP3.pdf}
+%\captionof{figure}[open MP cheat]{open MP cheat}
+
+\includegraphics[scale=0.78]{./Bilder/OpenMP4.pdf}
+
+
+
+
+\section{Makefile}\label{sec:Makefile}
+This is the makefile that was created by \textit{cmake} according to \textit{CMakeLists.txt}. (see \ref{sec:CMake})
+\TLi{Makefile created by cmake}{./Code/Makefile}
+
+\end{document}

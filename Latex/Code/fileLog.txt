@@ -1,0 +1,17 @@
+$ git diff 261e30f4858514e5835e219a017e6090bd454e4c file.txt
+diff --git a/file.txt b/file.txt
+index 89647cb..c494410 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1,6 +1,10 @@
+ FILE
+ =====================================
+ Inititial content.Inititial content.
++<<<<<<< HEAD
++Content added by A.
++=======
+ Content added by B.
++>>>>>>> 261e30f4858514e5835e219a017e6090bd454e4c
+ Inititial content.Inititial content.
+-Content added by B.
+\ No newline at end of file

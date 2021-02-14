@@ -1,0 +1,10 @@
+$ git diff 1c59799407bc618b805a864dd5fff1dc4fddac8c
+diff --git a/README.md b/README.md
+index 7cccdf7..9b23cff 100644
+--- a/README.md
++++ b/README.md
+@@ -1,3 +1,3 @@
+ READ ME
+ ==================================================
+-This repos. contains my solutions to the exercises
++This repo. contains my solutions to the exercises

@@ -1,0 +1,7 @@
+$ cd existing_folder
+$ git init
+# The SSH-path git@gitlab.etzh.ch:origin/master is generated on git-WebInterface
+$ git remote add origin git@gitlab.ethz.ch:anurech/Python.git 
+$ git add .
+$ git commit -m "Initial commit"
+$ git push -u origin master

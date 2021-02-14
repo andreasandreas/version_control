@@ -1,0 +1,1 @@
+$ git blame     #displays who changed what and when

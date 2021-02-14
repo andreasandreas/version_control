@@ -1,0 +1,51 @@
+# Call as cmake -G 'Unix Makefiles' -B"${build directory}" -H"${source directory}"
+# or with build directory as the working directory
+# cmake "${source directory}"
+# then a Makefile will be generated.
+# Proceed with make && make install
+
+cmake_minimum_required(VERSION 2.8)
+
+project("My little project")
+
+# add include directories
+include_directories("/opt/local/include" /usr/local/include "${CMAKE_SOURCE_DIR}" /here/are/my/headers)
+
+# Require C++ 11
+# DO THIS BEFORE ANY add_executable OR add_library
+ADD_COMPILE_OPTIONS(-std=c++11)
+
+
+
+# Build foo from foo.cpp and bar from bar.cpp
+set(programs foo bar)
+foreach(prog ${programs})
+   add_executable(${prog} ${prog}.cpp)
+endforeach()
+
+# build qux using more than one dependency
+add_executable(qux qux.cpp otherDependency.cpp)
+
+# build a static library
+add_library(myIntegrationLibrary STATIC myIntegrationLibrary.cpp)
+
+# build a dynamic library
+add_library(myDynamicLib SHARED myDynamicLib.cpp)
+
+# link executable
+target_link_libraries(qux MyIntegrationLibrary myDynamicLib)
+
+# install targets to somewhere
+install(TARGETS foo bar qux
+        ARCHIVE DESTINATION /path/for/static_libs
+        LIBRARY DESTINATION /path/for/dynamic_libs
+        RUNTIME DESTINATION /path/for/binaries)
+
+# install other files
+install(FILES myPrettyHeader.hpp DESTINATION /path/for/includes)
+
+# build also stuff in subdirectories
+set directoriesToProcess(this and that)
+foreach(dir ${directoriesToProcess})
+   add_subdirectory(${dir})
+endforeach()

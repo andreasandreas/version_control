@@ -1,0 +1,2 @@
+$ cd localRepos
+$ git checkout branchName    #switches to branch name

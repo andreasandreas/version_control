@@ -1,0 +1,32 @@
+#****************************** MAIN CMakeLists.txt ****************************** 
+
+cmake_minimum_required(VERSION 2.8)
+
+project("Project Name")
+message("\n Creating Makefile")
+message(" From CMakeLists in " ${CMAKE_SOURCE_DIR})
+message(" --------------------------------------")
+
+set(CXX_STANDARD_REQUIRED on)
+set(CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -Wpedantic")
+#with -Wno someWarning someWarning is ignored
+
+#BUILT TYPES:
+#Types are: None Debug Release RelWithDebInfo MinSizeRel
+set(${CMAKE_BUILD_TYPE} Debug)
+
+#Where to put and find the files
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Bin)
+
+set(DIRECTORIES Src Test)
+
+#Tells CMake where else-to finde CMakeLists.txt
+foreach(directory ${DIRECTORIES})
+	add_subdirectory(${directory})
+endforeach(directory)
+
+# This needs to be in both the top-level and the test CMake file.
+enable_testing()

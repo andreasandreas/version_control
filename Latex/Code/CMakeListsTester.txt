@@ -1,0 +1,13 @@
+...
+#--------------------------- Testing ---------------------------
+#Creating and Linking Testing-executables
+
+add_executable(GenomeTest1 ./Test/GenomeTest1.cpp)
+target_link_libraries(GenomeTest1 myPennaLib)
+
+add_executable(GenomeTest2 ./Test/GenomeTest2.cpp)
+target_link_libraries(GenomeTest2 myPennaLib)
+
+enable_testing()
+add_test(NAME Genome-Test-1 COMMAND GenomeTest1)
+add_test(NAME Genome-Test-2 COMMAND GenomeTest2)

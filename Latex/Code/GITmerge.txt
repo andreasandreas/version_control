@@ -1,0 +1,1 @@
+$ git merge branchName       #merges branchName into the current branch

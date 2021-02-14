@@ -1,0 +1,2 @@
+//Generate public and private key, publish public key on gitlab- page
+$ ssh-keygen -t rsa -C "anurech@student.ethz.ch" -b 4096

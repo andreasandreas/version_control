@@ -1,0 +1,5 @@
+$ git log --pretty=oneline
+3ab4c8ffa2d8890916b826e14aaafd613b224562 Commit-message:Update file.txt by A
+$ git diff 3ab4c8ffa2d8890916b826e14aaafd613b224562 file.txt
+
+

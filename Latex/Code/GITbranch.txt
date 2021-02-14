@@ -1,0 +1,4 @@
+$ cd localRepos
+$ git status                 #what is the current branch
+$ git branch branchName      #creates a branch called branchName
+$ git push origin branchName #pushes the new branch to remote repo

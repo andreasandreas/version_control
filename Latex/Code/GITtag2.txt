@@ -1,0 +1,4 @@
+$ git tag <tagNameA> <commit-hash>                   #lightweight tag on certain commit
+$ git tag -a <tagNameB> -m "message" <commit-hash>   #annotead tag on certain commit
+
+$ git push origin <tagName>

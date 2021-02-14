@@ -1,0 +1,2 @@
+%.s: %.c
+	avr-gcc $(CFLAGS) -S -o $@ $<

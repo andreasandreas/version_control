@@ -1,0 +1,5 @@
+#Shows the difference from remote repos to the respective commit
+$ git diff <commit-HASH> <fileName>
+
+#Shows the differences from remote to n commits back
+$ git diff <HEAD^n> <filenName>

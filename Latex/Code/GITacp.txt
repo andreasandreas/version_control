@@ -1,0 +1,7 @@
+$ cd local_directory      #git entry-point of the repository
+$ git status              #shows files that have changed and should be moved to staging area
+$ git add <file>          #moves to staging area
+$ git add *               #moces all tracked files with changes to staging area
+$ git reset HEAD <file>   #removes file from the staging area
+$ git commit -m "Message" #saves changes with a message
+$ git push origin master  #pushes to online repository

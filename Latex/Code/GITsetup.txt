@@ -1,0 +1,3 @@
+$ git config --global user.name  "andrej"
+$ git config --global user.email "anurech@student.ethz.ch"
+$ git config --global core.editor "gedit --wait --new-window"

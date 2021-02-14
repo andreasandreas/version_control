@@ -1,0 +1,3 @@
+$ git tag -d <tagName>                    #delete tag tagName locally
+$ git push origin --delte <tagName>       #delete tag tagName from remote repo
+

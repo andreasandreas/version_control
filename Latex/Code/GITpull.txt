@@ -1,0 +1,3 @@
+$ cd local_directory  # git entry-point of the repository
+$ git fetch           # optional shows how has done what
+$ git pull            # updates the local repos to the online repos

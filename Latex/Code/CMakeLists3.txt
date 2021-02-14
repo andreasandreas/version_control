@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 2.8)
+
+project("My Random Project")
+
+message("\n Creating Makefile for NumInt")
+message(" From CMakeLists in " ${CMAKE_SOURCE_DIR})
+message(" --------------------------------------")
+set(${CMAKE_BUILD_TYPE} Debug)
+set(CXX_STANDARD_REQUIRED on)
+set(CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+include_directories("${CMAKE_SOURCE_DIR}" ../Headers)
+
+#create a static library
+add_library(myStaticLib STATIC doSthg1.cpp)
+
+#create a dynamic library
+add_library(myDynamicLib SHARED doSthg2.cpp)
+
+#create the exectuable
+add_executable(NumInt MNumInt.cpp doSthg3.cpp doSthg4.cpp)
+
+#linklibraries to executable
+target_link_libraries(NumInt myStaticLib myDynamicLib)

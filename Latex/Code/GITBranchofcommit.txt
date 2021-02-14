@@ -1,0 +1,3 @@
+$ git branch branchName <hash-key-of-commit>
+// or
+$ git branch branchName HEAD^3

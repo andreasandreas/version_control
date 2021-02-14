@@ -1,0 +1,10 @@
+FILE
+=====================================
+Inititial content.Inititial content.
+<<<<<<< HEAD
+Content added by A.
+=======
+Content added by B.
+>>>>>>> 18e15caa0444a57ab015b7549a1085db91ec7a2c
+Inititial content.Inititial content.
+Content added by B.

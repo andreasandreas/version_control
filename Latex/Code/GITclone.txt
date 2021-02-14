@@ -1,0 +1,2 @@
+% cd FOLDER
+% git clone SSH-PATH-from-online-repos

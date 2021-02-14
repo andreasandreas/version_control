@@ -1,0 +1,5 @@
+$ git log --pretty=oneline
+1be92aa01d74fe2c75541d1876f6c0801816858f minor text changes
+1c59799407bc618b805a864dd5fff1dc4fddac8c Added some infos to readme
+b9ca5bc2521a4e53c74fdc8d74d02d8c50b170d9 added README
+

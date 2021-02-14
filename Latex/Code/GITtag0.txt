@@ -1,0 +1,9 @@
+$ cd local repo
+$ git checkout <branchName>             #The branch where the tag should be set
+$ git tag <tagNameA>                    #create the lightweight tag - tagNameA
+$ git tag -a <tagNameB> -m "message"    #create the annotead tag - tagNameB
+
+$ git push origin <tagName>             #pushes tagName to online repository
+
+$ $ git tag                             #shows all tags (not just the ones of the current branch)
+
